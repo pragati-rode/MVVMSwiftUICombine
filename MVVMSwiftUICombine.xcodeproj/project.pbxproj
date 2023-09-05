@@ -14,6 +14,9 @@
 		FC67209F2AA72E8A004A865B /* MVVMSwiftUICombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67209E2AA72E8A004A865B /* MVVMSwiftUICombineTests.swift */; };
 		FC6720A92AA72E8A004A865B /* MVVMSwiftUICombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720A82AA72E8A004A865B /* MVVMSwiftUICombineUITests.swift */; };
 		FC6720AB2AA72E8A004A865B /* MVVMSwiftUICombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720AA2AA72E8A004A865B /* MVVMSwiftUICombineUITestsLaunchTests.swift */; };
+		FC6720BC2AA72F6A004A865B /* PlaceholderResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720BB2AA72F6A004A865B /* PlaceholderResponseModel.swift */; };
+		FC6720BE2AA7300D004A865B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720BD2AA7300D004A865B /* ContentViewModel.swift */; };
+		FC7054172AA732C2001A0E0E /* PlaceholderListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7054162AA732C2001A0E0E /* PlaceholderListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		FC6720A42AA72E8A004A865B /* MVVMSwiftUICombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSwiftUICombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6720A82AA72E8A004A865B /* MVVMSwiftUICombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUICombineUITests.swift; sourceTree = "<group>"; };
 		FC6720AA2AA72E8A004A865B /* MVVMSwiftUICombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUICombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC6720BB2AA72F6A004A865B /* PlaceholderResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderResponseModel.swift; sourceTree = "<group>"; };
+		FC6720BD2AA7300D004A865B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FC7054162AA732C2001A0E0E /* PlaceholderListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 		FC67208C2AA72E7E004A865B /* MVVMSwiftUICombine */ = {
 			isa = PBXGroup;
 			children = (
+				FC6720BA2AA72ED1004A865B /* Service */,
+				FC6720B92AA72ECA004A865B /* Model */,
 				FC67208D2AA72E7E004A865B /* MVVMSwiftUICombineApp.swift */,
-				FC67208F2AA72E7E004A865B /* ContentView.swift */,
+				FC6720B82AA72EA4004A865B /* ViewModel */,
+				FC6720B72AA72E95004A865B /* View */,
 				FC6720912AA72E89004A865B /* Assets.xcassets */,
 				FC6720932AA72E89004A865B /* Preview Content */,
 			);
@@ -125,6 +134,38 @@
 				FC6720AA2AA72E8A004A865B /* MVVMSwiftUICombineUITestsLaunchTests.swift */,
 			);
 			path = MVVMSwiftUICombineUITests;
+			sourceTree = "<group>";
+		};
+		FC6720B72AA72E95004A865B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC67208F2AA72E7E004A865B /* ContentView.swift */,
+				FC7054162AA732C2001A0E0E /* PlaceholderListRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC6720B82AA72EA4004A865B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC6720BD2AA7300D004A865B /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC6720B92AA72ECA004A865B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC6720BB2AA72F6A004A865B /* PlaceholderResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC6720BA2AA72ED1004A865B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6720BE2AA7300D004A865B /* ContentViewModel.swift in Sources */,
 				FC6720902AA72E7E004A865B /* ContentView.swift in Sources */,
+				FC6720BC2AA72F6A004A865B /* PlaceholderResponseModel.swift in Sources */,
+				FC7054172AA732C2001A0E0E /* PlaceholderListRow.swift in Sources */,
 				FC67208E2AA72E7E004A865B /* MVVMSwiftUICombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
