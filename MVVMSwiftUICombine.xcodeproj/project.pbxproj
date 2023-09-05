@@ -17,6 +17,8 @@
 		FC6720BC2AA72F6A004A865B /* PlaceholderResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720BB2AA72F6A004A865B /* PlaceholderResponseModel.swift */; };
 		FC6720BE2AA7300D004A865B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6720BD2AA7300D004A865B /* ContentViewModel.swift */; };
 		FC7054172AA732C2001A0E0E /* PlaceholderListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7054162AA732C2001A0E0E /* PlaceholderListRow.swift */; };
+		FC7054192AA73E63001A0E0E /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7054182AA73E63001A0E0E /* ContentService.swift */; };
+		FC70541B2AA73FA7001A0E0E /* PlaceholderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC70541A2AA73FA7001A0E0E /* PlaceholderError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		FC6720BB2AA72F6A004A865B /* PlaceholderResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderResponseModel.swift; sourceTree = "<group>"; };
 		FC6720BD2AA7300D004A865B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FC7054162AA732C2001A0E0E /* PlaceholderListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderListRow.swift; sourceTree = "<group>"; };
+		FC7054182AA73E63001A0E0E /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		FC70541A2AA73FA7001A0E0E /* PlaceholderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 		FC6720BA2AA72ED1004A865B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FC7054182AA73E63001A0E0E /* ContentService.swift */,
+				FC70541A2AA73FA7001A0E0E /* PlaceholderError.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -301,8 +307,10 @@
 				FC6720BE2AA7300D004A865B /* ContentViewModel.swift in Sources */,
 				FC6720902AA72E7E004A865B /* ContentView.swift in Sources */,
 				FC6720BC2AA72F6A004A865B /* PlaceholderResponseModel.swift in Sources */,
+				FC70541B2AA73FA7001A0E0E /* PlaceholderError.swift in Sources */,
 				FC7054172AA732C2001A0E0E /* PlaceholderListRow.swift in Sources */,
 				FC67208E2AA72E7E004A865B /* MVVMSwiftUICombineApp.swift in Sources */,
+				FC7054192AA73E63001A0E0E /* ContentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

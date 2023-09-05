@@ -11,7 +11,9 @@ import SwiftUI
 struct MVVMSwiftUICombineApp: App {
     var body: some Scene {
         WindowGroup {
-            let viewModel = ContentViewModel()
+            let service = ContentService()
+            let viewModel = ContentViewModel(service: service)
+           
             ContentView(viewModel: viewModel)
         }
     }

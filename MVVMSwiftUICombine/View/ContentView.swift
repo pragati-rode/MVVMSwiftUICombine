@@ -10,32 +10,28 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel: ContentViewModel
     var body: some View {
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world!")
-//        }
-//        .padding()
         
         NavigationView {
             List {
                listSection
             }
+            .navigationTitle("Content List")
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: ContentViewModel())
+        ContentView(viewModel: ContentViewModel(service: ContentService()))
     }
 }
 
 private extension ContentView {
     var listSection: some View {
         Section {
-            
+            ForEach(viewModel.arrayItems) { item in
+               PlaceholderListRow(item: item)
+            }
         }
     }
 }
